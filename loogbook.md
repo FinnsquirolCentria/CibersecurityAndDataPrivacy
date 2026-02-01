@@ -12,6 +12,6 @@
 | 2.2.2025| 1 |  Solving Username enumeration via different responses lab| Solved using Burp Intruder|
 | 2.2.2025| 0,5 | Learning about resetting user password method| Learned about URL tokenization|
 | 2.2.2025| 1 |  Solving Password reset broken logic lab| Solved using Burp Repeater|
-| 2.2.2025| 0.5 |  Learning about access control| Learned about the access control vulnerabilities|
-| 2.2.2025| 0.5 |  Solving Unprotected admin functionality lab| Solved using Burp Repeater by checking robots.txt|
-| 2.2.2025| 0.5 |  Solving User role can be modified in user profile lab| Solved using Burp Repeater and adding roleid|
+| 2.2.2025| 0,5 |  Learning about access control| Learned about the access control vulnerabilities|
+| 2.2.2025| 0,5 |  Solving Unprotected admin functionality lab| Solved using Burp Repeater by checking robots.txt|
+| 2.2.2025| 0,5 |  Solving User role can be modified in user profile lab| Solved using Burp Repeater and adding roleid|
