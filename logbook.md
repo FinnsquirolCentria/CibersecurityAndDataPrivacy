@@ -15,3 +15,8 @@
 | 2.2.2025| 0,5 |  Learning about access control| Learned about the access control vulnerabilities|
 | 2.2.2025| 0,5 |  Solving Unprotected admin functionality lab| Solved using Burp Repeater by checking robots.txt|
 | 2.2.2025| 0,5 |  Solving User role can be modified in user profile lab| Solved using Burp Repeater and adding roleid|
+| 4.2.2026 | 0.5 | Setting up Docker environment for Booking System Phase 1 | Started containers; web app accessible at http://localhost:8001 |
+| 4.2.2026 | 0.5 | Run OWASP ZAP automated scan | ZAP scan completed; multiple Medium/Low alerts
+| 4.2.2026 | Created a Zap report | Saved ZAP output to `zap_report_round1.md` and added brief ZAP summary |
+| 4.2.26 | 1.0 | Manual testing of registration | Manual registration attempts returned server error (registration failed); could not consistently confirm SQLi/XSS or password exposure |
+| 5.2026 | 1.5 | Write test report | Created `test_report_diegofinnila.md` documenting ZAP findings, stability issues and recommended fixes |
