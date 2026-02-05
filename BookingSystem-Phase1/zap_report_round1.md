@@ -1,4 +1,4 @@
-# zap_report_round1
+# ZAP by Checkmarx Scanning Report
 
 ZAP by [Checkmarx](https://checkmarx.com/).
 
@@ -9,8 +9,8 @@ ZAP by [Checkmarx](https://checkmarx.com/).
 | --- | --- |
 | High | 0 |
 | Medium | 3 |
-| Low | 4 |
-| Informational | 1 |
+| Low | 2 |
+| Informational | 0 |
 
 
 
@@ -19,59 +19,18 @@ ZAP by [Checkmarx](https://checkmarx.com/).
 
 | Level | Reason | Site | Description | Statistic |
 | --- | --- | --- | --- | --- |
-| Low | Warning |  | ZAP warnings logged - see the zap.log file for details | 22    |
-| Low | Exceeded High | http://localhost:8001 | Percentage of responses with status code 5xx | 53 % |
-| Info | Informational | http://clients2.google.com | Percentage of responses with status code 2xx | 100 % |
-| Info | Informational | http://clients2.google.com | Percentage of endpoints with content type application/json | 100 % |
-| Info | Informational | http://clients2.google.com | Percentage of endpoints with method GET | 100 % |
-| Info | Informational | http://clients2.google.com | Count of total endpoints | 1    |
-| Info | Informational | http://localhost:8001 | Percentage of responses with status code 2xx | 17 % |
-| Info | Informational | http://localhost:8001 | Percentage of responses with status code 3xx | 9 % |
-| Info | Exceeded Low | http://localhost:8001 | Percentage of responses with status code 4xx | 19 % |
-| Info | Informational | http://localhost:8001 | Percentage of endpoints with content type image/png | 5 % |
-| Info | Informational | http://localhost:8001 | Percentage of endpoints with content type text/css | 5 % |
-| Info | Informational | http://localhost:8001 | Percentage of endpoints with content type text/html | 17 % |
-| Info | Informational | http://localhost:8001 | Percentage of endpoints with content type text/javascript | 11 % |
-| Info | Informational | http://localhost:8001 | Percentage of endpoints with content type text/plain | 52 % |
-| Info | Informational | http://localhost:8001 | Percentage of endpoints with method GET | 94 % |
-| Info | Informational | http://localhost:8001 | Percentage of endpoints with method POST | 5 % |
-| Info | Informational | http://localhost:8001 | Count of total endpoints | 17    |
-| Info | Informational | http://localhost:8001 | Percentage of slow responses | 4 % |
-| Info | Informational | https://accounts.google.com | Percentage of responses with status code 2xx | 100 % |
-| Info | Informational | https://accounts.google.com | Percentage of endpoints with content type application/binary | 100 % |
-| Info | Informational | https://accounts.google.com | Percentage of endpoints with method POST | 100 % |
-| Info | Informational | https://accounts.google.com | Count of total endpoints | 1    |
-| Info | Informational | https://android.clients.google.com | Percentage of responses with status code 2xx | 42 % |
-| Info | Informational | https://android.clients.google.com | Percentage of responses with status code 3xx | 57 % |
-| Info | Informational | https://android.clients.google.com | Percentage of endpoints with content type application/x-protobuffer | 33 % |
-| Info | Informational | https://android.clients.google.com | Percentage of endpoints with content type text/plain | 66 % |
-| Info | Informational | https://android.clients.google.com | Percentage of endpoints with method POST | 100 % |
-| Info | Informational | https://android.clients.google.com | Count of total endpoints | 3    |
-| Info | Informational | https://android.clients.google.com | Percentage of slow responses | 28 % |
-| Info | Informational | https://content-autofill.googleapis.com | Percentage of responses with status code 2xx | 100 % |
-| Info | Informational | https://content-autofill.googleapis.com | Percentage of endpoints with content type text/plain | 100 % |
-| Info | Informational | https://content-autofill.googleapis.com | Percentage of endpoints with method GET | 100 % |
-| Info | Informational | https://content-autofill.googleapis.com | Count of total endpoints | 1    |
-| Info | Informational | https://optimizationguide-pa.googleapis.com | Percentage of responses with status code 2xx | 100 % |
-| Info | Informational | https://optimizationguide-pa.googleapis.com | Percentage of endpoints with content type application/x-protobuf | 50 % |
-| Info | Informational | https://optimizationguide-pa.googleapis.com | Percentage of endpoints with content type text/html | 50 % |
-| Info | Informational | https://optimizationguide-pa.googleapis.com | Percentage of endpoints with method GET | 50 % |
-| Info | Informational | https://optimizationguide-pa.googleapis.com | Percentage of endpoints with method POST | 50 % |
-| Info | Informational | https://optimizationguide-pa.googleapis.com | Count of total endpoints | 2    |
-| Info | Informational | https://optimizationguide-pa.googleapis.com | Percentage of slow responses | 60 % |
-| Info | Informational | https://update.googleapis.com | Percentage of responses with status code 2xx | 100 % |
-| Info | Informational | https://update.googleapis.com | Percentage of endpoints with content type application/json | 100 % |
-| Info | Informational | https://update.googleapis.com | Percentage of endpoints with method POST | 100 % |
-| Info | Informational | https://update.googleapis.com | Count of total endpoints | 1    |
-| Info | Informational | https://www.google.com | Percentage of responses with status code 2xx | 100 % |
-| Info | Informational | https://www.google.com | Percentage of endpoints with content type application/x-protobuffer | 100 % |
-| Info | Informational | https://www.google.com | Percentage of endpoints with method GET | 100 % |
-| Info | Informational | https://www.google.com | Count of total endpoints | 1    |
-| Info | Informational | https://www.googleapis.com | Percentage of responses with status code 2xx | 100 % |
-| Info | Informational | https://www.googleapis.com | Percentage of endpoints with content type application/json | 100 % |
-| Info | Informational | https://www.googleapis.com | Percentage of endpoints with method POST | 100 % |
-| Info | Informational | https://www.googleapis.com | Count of total endpoints | 1    |
-| Info | Informational | https://www.googleapis.com | Percentage of slow responses | 100 % |
+| Low | Warning |  | ZAP warnings logged - see the zap.log file for details | 1    |
+| Info | Informational | http://localhost:8001 | Percentage of responses with status code 2xx | 20 % |
+| Info | Informational | http://localhost:8001 | Percentage of responses with status code 4xx | 75 % |
+| Info | Informational | http://localhost:8001 | Percentage of responses with status code 5xx | 4 % |
+| Info | Informational | http://localhost:8001 | Percentage of endpoints with content type text/css | 9 % |
+| Info | Informational | http://localhost:8001 | Percentage of endpoints with content type text/html | 18 % |
+| Info | Informational | http://localhost:8001 | Percentage of endpoints with content type text/javascript | 18 % |
+| Info | Informational | http://localhost:8001 | Percentage of endpoints with content type text/plain | 54 % |
+| Info | Informational | http://localhost:8001 | Percentage of endpoints with method GET | 90 % |
+| Info | Informational | http://localhost:8001 | Percentage of endpoints with method POST | 9 % |
+| Info | Informational | http://localhost:8001 | Count of total endpoints | 11    |
+| Info | Informational | http://localhost:8001 | Percentage of slow responses | 8 % |
 
 
 
@@ -81,13 +40,10 @@ ZAP by [Checkmarx](https://checkmarx.com/).
 | Name | Risk Level | Number of Instances |
 | --- | --- | --- |
 | Absence of Anti-CSRF Tokens | Medium | 1 |
-| Content Security Policy (CSP) Header Not Set | Medium | 5 |
-| Missing Anti-clickjacking Header | Medium | 5 |
+| Content Security Policy (CSP) Header Not Set | Medium | 2 |
+| Missing Anti-clickjacking Header | Medium | 2 |
 | Application Error Disclosure | Low | 1 |
-| Strict-Transport-Security Header Not Set | Low | 8 |
-| Timestamp Disclosure - Unix | Low | Systemic |
-| X-Content-Type-Options Header Missing | Low | Systemic |
-| Re-examine Cache-control Directives | Informational | 2 |
+| X-Content-Type-Options Header Missing | Low | 5 |
 
 
 
@@ -173,13 +129,6 @@ Check the HTTP Referer header to see if the request originated from an expected 
 
 Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.
 
-* URL: http://localhost:8001
-  * Node Name: `http://localhost:8001`
-  * Method: `GET`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
 * URL: http://localhost:8001/
   * Node Name: `http://localhost:8001/`
   * Method: `GET`
@@ -194,23 +143,9 @@ Content Security Policy (CSP) is an added layer of security that helps to detect
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
-* URL: http://localhost:8001/static/footer.html
-  * Node Name: `http://localhost:8001/static/footer.html`
-  * Method: `GET`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://optimizationguide-pa.googleapis.com/downloads%3Fname=1767628897&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS
-  * Node Name: `https://optimizationguide-pa.googleapis.com/downloads (name,target)`
-  * Method: `GET`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
 
 
-Instances: 5
+Instances: 2
 
 ### Solution
 
@@ -245,13 +180,6 @@ Ensure that your web server, application server, load balancer, etc. is configur
 
 The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.
 
-* URL: http://localhost:8001
-  * Node Name: `http://localhost:8001`
-  * Method: `GET`
-  * Parameter: `x-frame-options`
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
 * URL: http://localhost:8001/
   * Node Name: `http://localhost:8001/`
   * Method: `GET`
@@ -266,23 +194,9 @@ The response does not protect against 'ClickJacking' attacks. It should include 
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
-* URL: http://localhost:8001/static/footer.html
-  * Node Name: `http://localhost:8001/static/footer.html`
-  * Method: `GET`
-  * Parameter: `x-frame-options`
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://optimizationguide-pa.googleapis.com/downloads%3Fname=1767628897&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS
-  * Node Name: `https://optimizationguide-pa.googleapis.com/downloads (name,target)`
-  * Method: `GET`
-  * Parameter: `x-frame-options`
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
 
 
-Instances: 5
+Instances: 2
 
 ### Solution
 
@@ -338,181 +252,6 @@ Review the source code of this page. Implement custom error pages. Consider impl
 
 #### Source ID: 3
 
-### [ Strict-Transport-Security Header Not Set ](https://www.zaproxy.org/docs/alerts/10035/)
-
-
-
-##### Low (High)
-
-### Description
-
-HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.
-
-* URL: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQ0LjAuNzU1OS4xMTISLgkpKaFsFNIqrBIFDVNVgbUSBQ3OQUx6EgUNaPg5uhIFDV0anrAhvddWjLD5fZIYt6nKAQ==%3Falt=proto
-  * Node Name: `https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQ0LjAuNzU1OS4xMTISLgkpKaFsFNIqrBIFDVNVgbUSBQ3OQUx6EgUNaPg5uhIFDV0anrAhvddWjLD5fZIYt6nKAQ== (alt)`
-  * Method: `GET`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://optimizationguide-pa.googleapis.com/downloads%3Fname=1767628897&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS
-  * Node Name: `https://optimizationguide-pa.googleapis.com/downloads (name,target)`
-  * Method: `GET`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://android.clients.google.com/c2dm/register3
-  * Node Name: `https://android.clients.google.com/c2dm/register3 ()(X-scope,X-subtype,app,appid,device,gmsv,scope,sender,ttl)`
-  * Method: `POST`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://android.clients.google.com/c2dm/register3
-  * Node Name: `https://android.clients.google.com/c2dm/register3 ()(app,device,sender)`
-  * Method: `POST`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://android.clients.google.com/checkin
-  * Node Name: `https://android.clients.google.com/checkin ()( *1-da39a3ee5e6b4b0d3255bfef95601890af...)`
-  * Method: `POST`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://optimizationguide-pa.googleapis.com/v1:GetModels%3Fkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
-  * Node Name: `https://optimizationguide-pa.googleapis.com/v1:GetModels (key)(
- 
-n	 2h
-atype.googleapis.com/goog...)`
-  * Method: `POST`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://update.googleapis.com/service/update2/json%3Fcup2key=15:owJjYDXS3L_9441LAq8AF1F6WviC02IlEfIw9WxOmOA&cup2hreq=47e135c0444cee1a99ed935cfe826cab830b3d1675a0eb88132449e596bcb46b
-  * Node Name: `https://update.googleapis.com/service/update2/json (cup2hreq,cup2key)({request:{@os,@updater,acceptformat,apps:[{appid,brand,enabled,lang,ping:{r},updatecheck:{},version}..,{accept_locale,appid,brand,enabled,lang,ping:{r},updatecheck:{},version},{appid,brand,enabled,lang,ping:{r},updatecheck:{},version}..],arch,dedup,domainjoined,hw:{avx,physmemory,sse,sse2,sse3,sse41,sse42,ssse3},ismachine,os:{arch,platform,version},prodversion,protocol,requestid,sessionid,updaters:{autoupdatecheckenabled,ismachine,lastchecked,laststarted,name,updatepolicy,version},updaterversion}})`
-  * Method: `POST`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-* URL: https://www.googleapis.com/chromewebstore/v1.1/items/verify
-  * Node Name: `https://www.googleapis.com/chromewebstore/v1.1/items/verify ()({hash,ids:[],protocol_version})`
-  * Method: `POST`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: ``
-
-
-Instances: 8
-
-### Solution
-
-Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.
-
-### Reference
-
-
-* [ https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html ](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html)
-* [ https://owasp.org/www-community/Security_Headers ](https://owasp.org/www-community/Security_Headers)
-* [ https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security ](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)
-* [ https://caniuse.com/stricttransportsecurity ](https://caniuse.com/stricttransportsecurity)
-* [ https://datatracker.ietf.org/doc/html/rfc6797 ](https://datatracker.ietf.org/doc/html/rfc6797)
-
-
-#### CWE Id: [ 319 ](https://cwe.mitre.org/data/definitions/319.html)
-
-
-#### WASC Id: 15
-
-#### Source ID: 3
-
-### [ Timestamp Disclosure - Unix ](https://www.zaproxy.org/docs/alerts/10096/)
-
-
-
-##### Low (Low)
-
-### Description
-
-A timestamp was disclosed by the application/web server. - Unix
-
-* URL: https://optimizationguide-pa.googleapis.com/v1:GetModels%3Fkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
-  * Node Name: `https://optimizationguide-pa.googleapis.com/v1:GetModels (key)(
- 
-n	 2h
-atype.googleapis.com/goog...)`
-  * Method: `POST`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: `1673999601`
-  * Other Info: `1673999601, which evaluates to: 2023-01-18 01:53:21.`
-* URL: https://optimizationguide-pa.googleapis.com/v1:GetModels%3Fkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
-  * Node Name: `https://optimizationguide-pa.googleapis.com/v1:GetModels (key)(
- 
-n	 2h
-atype.googleapis.com/goog...)`
-  * Method: `POST`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: `1679317318`
-  * Other Info: `1679317318, which evaluates to: 2023-03-20 15:01:58.`
-* URL: https://optimizationguide-pa.googleapis.com/v1:GetModels%3Fkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
-  * Node Name: `https://optimizationguide-pa.googleapis.com/v1:GetModels (key)(
- 
-n	 2h
-atype.googleapis.com/goog...)`
-  * Method: `POST`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: `1728324084`
-  * Other Info: `1728324084, which evaluates to: 2024-10-07 21:01:24.`
-* URL: https://optimizationguide-pa.googleapis.com/v1:GetModels%3Fkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
-  * Node Name: `https://optimizationguide-pa.googleapis.com/v1:GetModels (key)(
- 
-n	 2h
-atype.googleapis.com/goog...)`
-  * Method: `POST`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: `1745311339`
-  * Other Info: `1745311339, which evaluates to: 2025-04-22 11:42:19.`
-* URL: https://optimizationguide-pa.googleapis.com/v1:GetModels%3Fkey=AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
-  * Node Name: `https://optimizationguide-pa.googleapis.com/v1:GetModels (key)(
- 
-n	 2h
-atype.googleapis.com/goog...)`
-  * Method: `POST`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: `1767628897`
-  * Other Info: `1767628897, which evaluates to: 2026-01-05 18:01:37.`
-
-Instances: Systemic
-
-
-### Solution
-
-Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.
-
-### Reference
-
-
-* [ https://cwe.mitre.org/data/definitions/200.html ](https://cwe.mitre.org/data/definitions/200.html)
-
-
-#### CWE Id: [ 497 ](https://cwe.mitre.org/data/definitions/497.html)
-
-
-#### WASC Id: 13
-
-#### Source ID: 3
-
 ### [ X-Content-Type-Options Header Missing ](https://www.zaproxy.org/docs/alerts/10021/)
 
 
@@ -531,8 +270,8 @@ The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. T
   * Evidence: ``
   * Other Info: `This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
 At "High" threshold this scan rule will not alert on client or server error responses.`
-* URL: http://localhost:8001/static/footer.html
-  * Node Name: `http://localhost:8001/static/footer.html`
+* URL: http://localhost:8001/register
+  * Node Name: `http://localhost:8001/register`
   * Method: `GET`
   * Parameter: `x-content-type-options`
   * Attack: ``
@@ -563,17 +302,9 @@ At "High" threshold this scan rule will not alert on client or server error resp
   * Evidence: ``
   * Other Info: `This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
 At "High" threshold this scan rule will not alert on client or server error responses.`
-* URL: https://optimizationguide-pa.googleapis.com/downloads%3Fname=1767628897&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS
-  * Node Name: `https://optimizationguide-pa.googleapis.com/downloads (name,target)`
-  * Method: `GET`
-  * Parameter: `x-content-type-options`
-  * Attack: ``
-  * Evidence: ``
-  * Other Info: `This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At "High" threshold this scan rule will not alert on client or server error responses.`
 
-Instances: Systemic
 
+Instances: 5
 
 ### Solution
 
@@ -593,52 +324,3 @@ If possible, ensure that the end user uses a standards-compliant and modern web 
 #### WASC Id: 15
 
 #### Source ID: 3
-
-### [ Re-examine Cache-control Directives ](https://www.zaproxy.org/docs/alerts/10015/)
-
-
-
-##### Informational (Low)
-
-### Description
-
-The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.
-
-* URL: https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQ0LjAuNzU1OS4xMTISLgkpKaFsFNIqrBIFDVNVgbUSBQ3OQUx6EgUNaPg5uhIFDV0anrAhvddWjLD5fZIYt6nKAQ==%3Falt=proto
-  * Node Name: `https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTQ0LjAuNzU1OS4xMTISLgkpKaFsFNIqrBIFDVNVgbUSBQ3OQUx6EgUNaPg5uhIFDV0anrAhvddWjLD5fZIYt6nKAQ== (alt)`
-  * Method: `GET`
-  * Parameter: `cache-control`
-  * Attack: ``
-  * Evidence: `private,max-age=604800`
-  * Other Info: ``
-* URL: https://optimizationguide-pa.googleapis.com/downloads%3Fname=1767628897&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS
-  * Node Name: `https://optimizationguide-pa.googleapis.com/downloads (name,target)`
-  * Method: `GET`
-  * Parameter: `cache-control`
-  * Attack: ``
-  * Evidence: `public, max-age=86400`
-  * Other Info: ``
-
-
-Instances: 2
-
-### Solution
-
-For secure content, ensure the cache-control HTTP header is set with "no-cache, no-store, must-revalidate". If an asset should be cached consider setting the directives "public, max-age, immutable".
-
-### Reference
-
-
-* [ https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching ](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching)
-* [ https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control)
-* [ https://grayduck.mn/2021/09/13/cache-control-recommendations/ ](https://grayduck.mn/2021/09/13/cache-control-recommendations/)
-
-
-#### CWE Id: [ 525 ](https://cwe.mitre.org/data/definitions/525.html)
-
-
-#### WASC Id: 13
-
-#### Source ID: 3
-
-
