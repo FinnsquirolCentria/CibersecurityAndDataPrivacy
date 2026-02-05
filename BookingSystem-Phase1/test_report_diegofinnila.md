@@ -66,13 +66,9 @@ Automated scanning (OWASP ZAP) and manual checks indicate multiple security and 
 
 | ID | Severity | Finding | Description | Evidence / Proof |
 |----|----------|---------|-------------|------------------|
-
-| F-01 | 🔴 High (Potential) | Possible SQL Injection (registration) | Automated tests and payloads indicated injection patterns but registration requests repeatedly returned server errors. Fll confirmation was not possible. Treat as high-priority until proven safe. | image |
-
+| F-01 | 🔴 High (Potential) | Possible SQL Injection (registration) | Automated tests and payloads indicated injection patterns but registration requests repeatedly returned server errors. Fll confirmation was not possible. Treat as high-priority until proven safe. | ![alt text](image.png) |
 | F-02 | 🔴 High (Not Confirmed) | Password storage / exposure | Initial expectations suggested weak password handling, but registration often failed and responses were inconsistent. Manual interception was not reliably possible due to Error during registration. | Unable to reliably capture successful registration responses due to server errors. Recommendation: ensure passwords are never returned in API responses. |
-
 | F-03 | 🟠 Medium (Potential) | Stored XSS via username | ZAP flagged absence of CSP and other protections; manual XSS confirmation could not be completed consistently because registration and rendering produced errors. Consider XSS possible where user-controlled content is rendered. | ZAP output (missing CSP) combined with observed response content suggests XSS risk. Recommendation: sanitize/encode output and add CSP. |
-
 | F-04 | 🟡 Low | Application error disclosure / stability issues | The service returned multiple 5xx responses and an "Application Error Disclosure" alert in ZAP. Error responses contained details useful to an attacker (stack or DB error hints). | ZAP Alerts: Application Error Disclosure; Insights show a high percentage of 5xx responses for `http://localhost:8001`. |
 
 ---
