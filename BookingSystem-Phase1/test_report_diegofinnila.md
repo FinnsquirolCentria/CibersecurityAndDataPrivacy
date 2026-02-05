@@ -67,7 +67,7 @@ Automated scanning (OWASP ZAP) and manual checks indicate multiple security and 
 | ID | Severity | Finding | Description | Evidence / Proof |
 |----|----------|---------|-------------|------------------|
 
-| F-01 | 🔴 High (Potential) | Possible SQL Injection (registration) | Automated tests and payloads indicated injection patterns but registration requests repeatedly returned server errors. Fll confirmation was not possible. Treat as high-priority until proven safe. | ![alt text](image.png) |
+| F-01 | 🔴 High (Potential) | Possible SQL Injection (registration) | Automated tests and payloads indicated injection patterns but registration requests repeatedly returned server errors. Fll confirmation was not possible. Treat as high-priority until proven safe. | image |
 
 | F-02 | 🔴 High (Not Confirmed) | Password storage / exposure | Initial expectations suggested weak password handling, but registration often failed and responses were inconsistent. Manual interception was not reliably possible due to Error during registration. | Unable to reliably capture successful registration responses due to server errors. Recommendation: ensure passwords are never returned in API responses. |
 
