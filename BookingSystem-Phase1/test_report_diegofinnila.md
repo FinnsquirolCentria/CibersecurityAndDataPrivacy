@@ -78,10 +78,10 @@ Automated scanning (OWASP ZAP) and manual checks indicate multiple security and 
 - Registration endpoint returned frequent 5xx errors during testing; this prevented consistent manual verification of some vulnerabilities (SQLi, XSS, plaintext password exposure).  
 - The ZAP automated scan produced a number of medium/low alerts (missing headers, CSRF absence, application error disclosure) which are reliable and should be fixed immediately.  
 - Recommended immediate workflow:  
-  1. Fix application error.  
-  2. Implement basic hardening.  
-  3. Re-run OWASP ZAP full scan and manual verification of registration flow (intercept traffic with DevTools / Burp / ZAP proxy).  
-  4. If registration succeeds after fixes, run dedicated SQLi and XSS manual tests and confirm password handling/storage.
+  - Fix application error.  
+  - Implement basic hardening.  
+  - Re-run OWASP ZAP full scan and manual verification of registration flow (intercept traffic with DevTools / Burp / ZAP proxy).  
+  - If registration succeeds after fixes, run dedicated SQLi and XSS manual tests and confirm password handling/storage.
 
 ---
 
