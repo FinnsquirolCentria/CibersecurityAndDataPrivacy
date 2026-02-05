@@ -20,8 +20,8 @@ The purpose of this penetration test is to identify security vulnerabilities and
   - **Gray-box testing** (partial knowledge of the system, no source code)
 
 **Test environment & dates:**  
-- **Start:** 2026-02-04  
-- **End:** 2026-02-05  
+- **Start:** 04.02.2026  
+- **End:** 05.02.2026
 - **Environment:**  
   - OS: Windows 11  
   - Browser: Chrome 121  
