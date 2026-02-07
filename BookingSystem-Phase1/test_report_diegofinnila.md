@@ -45,7 +45,8 @@ Automated scanning (OWASP ZAP) and manual checks indicate multiple security and 
 **Top 5 immediate actions:**  
 1. Fix application stability/server errors.
 2. Add parameterized queries / prepared statements for all DB access.  
-3. Add server-side input validation and sanitization.  
+3. Add server-side input validation and sanitization.
+4. Add CSRF protection and security headers (CSP, X-Frame-Options, X-Content-Type-Options, HSTS).  
 5. After stability fixes, re-run automated scans and manual verification (focus: SQLi, XSS, password storage).
 
 ---
@@ -69,7 +70,10 @@ Automated scanning (OWASP ZAP) and manual checks indicate multiple security and 
 | F-01 | 🔴 High (Potential) | Possible SQL Injection (registration) | Automated tests and payloads indicated injection patterns but registration requests repeatedly returned server errors. Fll confirmation was not possible. Treat as high-priority until proven safe. | ![alt text](image.png) |
 | F-02 | 🔴 High (Not Confirmed) | Password storage / exposure | Initial expectations suggested weak password handling, but registration often failed and responses were inconsistent. Manual interception was not reliably possible due to Error during registration. | Unable to reliably capture successful registration responses due to server errors. Recommendation: ensure passwords are never returned in API responses. |
 | F-03 | 🟠 Medium (Potential) | Stored XSS via username | ZAP flagged absence of CSP and other protections; manual XSS confirmation could not be completed consistently because registration and rendering produced errors. Consider XSS possible where user-controlled content is rendered. | ZAP output (missing CSP) combined with observed response content suggests XSS risk. Recommendation: sanitize/encode output and add CSP. |
-| F-04 | 🟡 Low | Application error disclosure / stability issues | The service returned multiple 5xx responses and an "Application Error Disclosure" alert in ZAP. Error responses contained details useful to an attacker (stack or DB error hints). | ZAP Alerts: Application Error Disclosure; Insights show a high percentage of 5xx responses for `http://localhost:8001`. |
+| F-04 | 🟠 Medium | Absence of Anti-CSRF tokens | ZAP reported "Absence of Anti-CSRF Tokens" for form endpoints. Forms or JSON endpoints used for registration do not include or validate CSRF tokens. | ZAP Alert: Absence of Anti-CSRF Tokens|
+| F-05 | 🟠 Medium | Missing critical security headers | ZAP reported multiple missing headers: Content-Security-Policy (CSP) header not set, Missing Anti-clickjacking header, X-Content-Type-Options missing. | ZAP Alerts list and response header inspection.|
+| F-06 | 🟡 Low | Application error disclosure / stability issues | The service returned multiple 5xx responses and an "Application Error Disclosure" alert in ZAP. Error responses contained details useful to an attacker (stack or DB error hints). | ZAP Alerts: Application Error Disclosure; Insights show a high percentage of 5xx responses for `http://localhost:8001`. |
+
 
 ---
 
