@@ -22,3 +22,4 @@
 | 5.2026 | 1,5 | Write test report | Created `test_report_diegofinnila.md` documenting ZAP findings, stability issues and recommended fixes |
 | 10.2026 | 3 | Re-Run ZAP Scan and write Discussion Post | Created a ZAP report for the updated version and wrote a discussion post based on the findings compared between the first website version and the updated one |
 | 17.2026 | 3 | Re-Run ZAP Scan for Part1 and checked the database manually| Created a ZAP report that included high alerts and found passwords were in plaintext|
+| 17.2026 | 3 | Learning to crack passwords with different methods|Cracked 6 out of 10 passwords|
