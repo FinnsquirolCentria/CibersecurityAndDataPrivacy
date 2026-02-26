@@ -109,11 +109,11 @@ List **all** pages, directories, and API endpoints discovered via:
 # Summary of Violations
 
 ### 🚩 Critical Issues
-- `/api/users` exposes **all emails + tokens** → Violates Spec 9 & 10  
+- `/api/users` exposes **all emails + tokens** → Violates Spec 9 and 10  
 - `/api/reservations/{id}` exposes:  
   - reserver email (for all users)  
   - reserver_token  
-  → Violates Spec 9 & 10  
+  → Violates Spec 9 and 10  
 - Reserver can see **other reservers’ emails** → GDPR breach   
 - No admin endpoints exist → Spec 4 and 5 incomplete  
 
